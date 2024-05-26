@@ -1,58 +1,57 @@
 package com.crudjspjava.bean;
 
+import java.util.Date;
+
 public class Usuario {
 	private int id;
-	private String nome;
-	private String password;
-	private String email;
-	private String sexo;
-	private String pais;
+	private String tipoEnergia;
+	private int quantidade;
+	private Date data;
+	private int fatorEmissao;
 	
-	//getter and setter id
+
+	//fatorEmissao
+	public int getfatorEmissao() {
+		return fatorEmissao;
+	}
+	
+	public void setfatorEmissao(int fatorEmissao) {
+		this.fatorEmissao = fatorEmissao;
+	}
+	
+	
+	//id
 	public int getId() {
 		return id;
 	}
+	
 	public void setId(int id) {
 		this.id = id;
 	}
 	
-	//getter and setter nome
-	public String getNome() {
-		return nome;
+	//TipoEnergia
+	public String getTipoEnergia() {
+		return tipoEnergia;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	
-	//getter and setter password
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
+	public void setTipoEnergia(String tipoEnergia) {
+		this.tipoEnergia = tipoEnergia;
 	}
 	
-	//getter and setter email
-	public String getEmail() {
-		return email;
+	//Quantidade
+	public int getQuantidade() {
+		return quantidade;
 	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	
-	//getter and setter sexo
-	public String getSexo() {
-		return sexo;
-	}
-	public void setSexo(String sexo) {
-		this.sexo = sexo;
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
 	}
 	
-	//getter and setter pais
-	public String getPais() {
-		return pais;
+	
+	//Data
+	public Date getData() {
+		return data;
 	}
-	public void setPais(String pais) {
-		this.pais = pais;
+	public void setData(Date data) {
+		this.data = data;
 	}
+	
 }

@@ -1,0 +1,42 @@
+
+
+<h1>Cadastrar novo consumo</h1>
+
+<form action="addusuario.jsp" method="post">
+
+	<table>
+		<tr>
+		<td>Tipo de energia:</td>
+		<td>
+			<select name="tipo_energia">
+			
+			<option>Carvão</option>
+			<option>Gás Natural</option>
+			<option>Óleo</option>
+			<option>Energia Hidrelétrica</option>
+			<option>Solar</option>
+			<option>Eólica</option>
+			</select>
+			</td>
+		</tr>
+		
+		<tr>
+		<td>Quantidade:</td>
+		<td><input type="number" name="quantidade_energia"/></td>
+		</tr>
+		
+		<tr>
+		<td>Data:</td>
+		<td><input type="date" name="data"/></td>
+		</tr>
+
+		<tr>
+		<td colspan="2"> 
+			<input type="submit" value="Adicionar Usuário">
+		</td>
+		</tr>
+		
+		
+		
+	</table>
+</form>
